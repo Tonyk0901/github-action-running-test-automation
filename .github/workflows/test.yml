@@ -19,10 +19,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      # docker-compose를 활용해 테스트를 위한 컨테이너 환경을 구성합니다.
-      - name: Start containers
-        run: docker-compose -f "docker-compose.yml" up -d --build
-
       # Node 16 버전을 사용합니다.
       - name: Install node
         uses: actions/setup-node@v2
