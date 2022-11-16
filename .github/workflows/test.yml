@@ -10,7 +10,7 @@ on:
       - "**"
 
 jobs:
-  Run Test:
+  run_jest:
     runs-on: ubuntu-latest
 
     steps:
